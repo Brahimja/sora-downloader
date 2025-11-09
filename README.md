@@ -103,7 +103,7 @@ docker build -t sora-downloader .
 docker run -d -p 5000:8000 \
   -e SORA_AUTH_TOKEN="粘贴你获取的Token" \
   --name sora-downloader \
-sora-downloader
+  sora-downloader
 ```  
   
 #### 方式二：启用访问令牌保护  
@@ -115,7 +115,7 @@ docker run -d -p 5000:8000 \
   -e SORA_AUTH_TOKEN="粘贴你获取的Token" \
   -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \
   --name sora-downloader \
-sora-downloader
+  sora-downloader
 ```  
   
 #### 方式三：启用访问令牌并使用代理  
@@ -128,7 +128,7 @@ docker run -d -p 5000:8000 \
   -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \
   -e HTTP_PROXY="http://你的代理地址:端口" \
   --name sora-downloader \
-sora-downloader
+  sora-downloader
 ```  
   
 **命令解释:**  
