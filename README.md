@@ -65,7 +65,7 @@
     *   在电脑端的 `Reqable` 中启动抓包。
     *   在手机上打开 Sora App 并进行**登录操作**。
     *   在 `Reqable` 的请求列表中，找到一个发往 `auth.openai.com/oauth/token` 的 **POST** 请求。
-    *   **查看该请求的"载荷" (Payload / Request Body):**
+    *   **查看该请求的"响应体":**
         *   `client_id`: 复制这个值，填入 `.env` 文件的 `SORA_CLIENT_ID`。
         *   `refresh_token`: 复制这个值，填入 `.env` 文件的 `SORA_REFRESH_TOKEN`。
 
