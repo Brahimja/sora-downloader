@@ -132,7 +132,7 @@ def get_sora_link():
 
     match = re.search(r'sora\.chatgpt\.com/p/([a-zA-Z0-9_]+)', sora_url)
     if not match:
-        return jsonify({"error": "无效的 Sora 链接格式"}), 400
+        return jsonify({"error": "无效的 Sora 链接格式。请发布后复制分享链接"}), 400
 
     video_id = match.group(1)
 
